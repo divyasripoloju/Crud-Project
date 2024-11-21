@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Management Portal</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Add a New User</h2>
+            <form id="userForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter full name" required>
+
+                <label for="userEmail">Email Address:</label>
+                <input type="email" id="userEmail" placeholder="Enter email" required>
+
+                <label for="userDob">Date of Birth:</label>
+                <input type="date" id="userDob" required>
+
+                <label for="userPhone">Contact Number:</label>
+                <input type="tel" id="userPhone" placeholder="Enter contact number">
+
+                <button type="submit">Add User</button>
+            </form>
+        </section>
+        <section>
+            <h2>Registered Users</h2>
+            <ul id="userList">
+                <!-- User details will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 User Management System</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
